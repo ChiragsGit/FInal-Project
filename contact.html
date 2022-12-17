@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/main.js" defer></script>
+    <title>Contact Us</title>
+</head>
+
+<body class="navbar">
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About Us</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+<body>
+    <main>
+        <form action="./thanks.html" method="post" name="Contact Us" netlify>
+            <fieldset>
+                <legend>Your Information</legend>
+                <div>
+                    <label for="firstName"><i>First Name</i></label><br>
+                    <input type="text" name="firstName" id="firstName" required maxlength="15" minlength="2"
+                        placeholder="Chirag"><br>
+                    <small>Required!</small>
+                </div>
+
+                <div>
+                    <label for="lasttName"><i>Last Name</i></label><br>
+                    <input type="text" name="lastName" id="lastName" required maxlength="25" minlength="2"
+                        placeholder="Sabharwal"><br>
+                    <small>Required!</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <div>
+                    <label for="email"><i>Email</i></label><br>
+                    <input type="email" name="email" id="email" required placeholder="chirags@hotmail.ca"><br>
+                    <small>Required!</small>
+                </div>
+
+                <div>
+                    <label for="tel"><i>Phone:</i></label><br>
+                    <input type="tel" name="tel" id="tel" required placeholder="1 (555)555-5555"> <br>
+                    <small>Required!</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Inquiry</legend>
+                <div>
+                    <label for="inquiryType"><i>Which product are you interested in?</i></label><br>
+                    <select name="inquiryType" id="inquiryType" required>
+                        <option value="fire"> Fire Nation $849.99</option>
+                        <option value="water"> Water Nation $1249.99</option>
+                        <option value="earth"> Earth Nation $1999.99</option>
+                        <option value="wind" selected> Wind Nation $6999.99</option>
+                    </select><br>
+                    <small>Required!</small>
+                </div>
+
+                <div>
+                    <label for="message"><i>Any Questions or Special Requests?</i></label><br>
+                    <textarea name="message" id="message" cols="50" rows="10" 
+                        placeholder="Type Here"> </textarea><br>
+                </div>
+            </fieldset>
+            <br>
+            <div>
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </div>
+            <br>
+        </form>
+    </main>
+
+    <footer> &copy;2022 Chirag Sabharwal</footer>
+
+</body>
+
+</html>
